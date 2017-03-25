@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/", methods=['GET', 'POST'])
 def hi_app():
     resp = twilio.twiml.Response()
-    resp.message("Hello from W again")    
+    resp.message("Hello again")    
     return str(resp)
 
 
