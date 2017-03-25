@@ -10,7 +10,7 @@ def sms():
     message_body = request.form['BODY']
 
     resp = twiml.Response()
-    resp.message('Hello{}, you said: {}'.format(number, message_body))
+    resp.message('Hey phone num{}, you said: {}'.format(number, message_body))
     return str(resp)
 
 
